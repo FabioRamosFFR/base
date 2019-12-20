@@ -18,5 +18,5 @@ consign()
     .into(app)
 
 app.listen(process.env.PORT || 3000, () => {
-    console.log('Executando Backend......')
+    console.log('Executando Backend........')
 })
