@@ -10,6 +10,7 @@ module.exports = app => {
         .post(admin(app.api.user.save))
         .get(admin(app.api.user.get))
     
+    
     app.route('/users/:id')
         .all(app.config.passport.authenticate())
         .put(admin(app.api.user.save))
@@ -50,4 +51,8 @@ module.exports = app => {
     app.route('/stats')
         .all(app.config.passport.authenticate())
         .get(app.api.stat.get)
+
+    app.route('/articlesbyuser')
+        .all(app.config.passport.authenticate())
+        .get(app.api.article.getArticlesByUser)        
 }

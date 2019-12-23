@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/16c864ec-8292-45ee-98b4-4bb3d3d1ea42/resourceGroups/cloud-shell-storage-eastus/providers/Microsoft.Web/sites/knowledgebackend",
+    "appService.deploySubpath": ""
+}

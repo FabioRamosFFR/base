@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+//mongoose.connect('mongodb://localhost/knowledge_stats', { useNewUrlParser: true, useUnifiedTopology: true })
 mongoose.connect('mongodb+srv://Admin:bezz2122@cluster0-wdsqr.mongodb.net/knowledge_stats?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
     .catch(e => {
         const msg = 'ERRO! Não foi possível conectar com o MongoDB!'
